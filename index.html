@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Пригрели змеюку</title>
+        <link rel=stylesheet type=text/css href=style.css>
+    </head>
+    <body>
+        <div id = text class = textAll>
+            <h1 class = text>САПЁР<br><hr></h1>
+            <h3 class = text>Для начала игры выберите встроенный режим или задайте параметры сами.</h3>
+            <p class = text>Нажмите Enter, чтобы подтвердить пользовательские настройки.</p>
+        </div>
+        <div id = difficult class = textAll>
+            <div class = difficult>
+                <h3>Новичок<br><hr></h3>
+                <p><b>Размеры поля:</b> 9 х 9</p>
+                <p><b>Количество мин:</b> 10</p>
+            </div>
+            <div class = difficult>
+                <h3>Любитель<br><hr></h3>
+                <p><b>Размеры поля:</b> 16 х 16</p>
+                <p><b>Количество мин:</b> 40</p>
+            </div>
+            <div class = difficult>
+                <h3>Профессионал<br><hr></h3>
+                <p><b>Размеры поля:</b> 22 х 22</p>
+                <p><b>Количество мин:</b> 99</p>
+            </div>
+            <div id = break></div>
+            <div id = clientDif class = difficult>
+                <h3>Пользовательский режим<br><hr></h3>
+                <p><b>Размеры квадратного поля: </b>
+                    <input class = num type = number></p>
+                <p><b>Количество мин: </b>
+                    <input class = num type = number></p>
+            </div>
+        </div>
+        <div id = difficultUp class = textAll>
+            <div class = difficultUp id = easy></div>
+            <div class = difficultUp id = normal></div>
+            <div class = difficultUp id = hard></div>
+        </div>
+        <p id = bombCount></p>
+        <div id = field></div>
+        <p id = timer>0</p>
+        <div id = giveUp class = button>Сдаться</div>
+        <div id = reset class = button>Заново</div>
+        <div id = changeField class = button>Изменить условия</div>
+        <script src=script.js></script>
+    </body>
+</html>
